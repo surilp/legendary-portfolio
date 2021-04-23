@@ -29,5 +29,5 @@ def persist_contact(data):
     subject = data.get('subject')
     message = data.get('message')
 
-    with open('database.txt', 'a') as file:
+    with open('./database.txt', 'a') as file:
         file.write(f'{email}|{subject}|{message}\n')
